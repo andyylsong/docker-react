@@ -8,6 +8,6 @@ before_install:
   - docker build -t andy/react -f Dockerfile.dev .
 
 script:
-  - docker run andy/react npm run test -- --coverage
-  
+  - docker run -e CI=true andy/react npm run test -- --coverage
+
 
