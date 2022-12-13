@@ -13,8 +13,8 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
-  app: "react"
-  env: "React-env"
+  app: "react-app"
+  env: "react-env"
   bucket_name: "elasticbeanstalk-us-east-1-522903326643"
   bucket_path: "React"
   On:
